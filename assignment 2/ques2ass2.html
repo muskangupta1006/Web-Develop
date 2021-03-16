@@ -1,0 +1,99 @@
+<html>
+    <head>
+	<title>Form</title>
+	<link rel="stylesheet" href="ques2ass2.css">
+</head>
+<body>
+
+	<div align="center">
+		<div align="center">
+			<h2 class="text">Please Enter Your Details</h2>
+			<h4 class="text">Fill the application form below and submit</h4>
+		<form class="box" action="ques1ass2.html" method="POST" target="hidden_iframe">
+				<table class="table">
+                <tr>
+                    <td class="text"><label>Name*</label> </td>
+                    <td><input class="detail" type="text" name="name" placeholder="First Name" required></td>
+                    <td><input class="detail" type="text" name="name" placeholder="Last Name" required></td>
+                </tr>
+				<tr>
+                    <td class="text"><label> Email-Address*</label></td>
+                    <td colspan="2"><input class="detail1" type="text" name="email" placeholder="Mail@example.com" required></td>
+                </tr>
+				<tr>
+                    <td class="text">Phone Number*</td>
+                    <td colspan="2"><input class="detail1" type="phone" name="phone" placeholder="10 digit Phone Number" required></td>
+                </tr>
+				<tr>
+                    <td class="text"><label>Gender*</label></td>
+                    <td colspan="2">
+                        <select class="detail2" name="gender" type="gender" required>
+							<option  value="-1" >Gender</option>
+         					<option value="Male" selected> Male</option>
+         					<option value="Female">Female</option>
+              			</select>
+                        <br>
+                        </td>
+                </tr>
+              	<tr>
+                      <td class="text">Citizen*</td>
+                      <td colspan="2"><select class="detail2" name="Citizen"  required>
+              			<option  value="-1" selected>Select Country</option>
+         				<option value="India">India</option>
+         				<option value="USA">USA</option>
+         				<option value="China">China</option>
+         				<option value="Japan">Japan</option>
+         				<option value="Sri_Lanka">Sri Lanka</option>
+            			</select>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                <td class="text"><label>origin*</label></td>
+                <td>
+                    <input type="radio" name="origin" value="INDIAN">INDIAn
+                    <input type="radio" name="origin" value="NRI">NRIan
+                </td>
+                </tr>
+                <tr>
+                    <td class="text"><label>complexion*</label></td>
+                    <td>
+                        <input type="checkbox" name="fair" value="fair">fairer
+                        <input type="checkbox" name="dark" value="dark">darker
+                    </td>
+                </tr>
+				<tr>
+                <td class="text">Date of Birth*</td>
+                <td colspan="2"> <input class="detail1" type="date" name="date" placeholder="datetime-local" required>
+                </td>
+                </tr>
+				<tr>
+                    <td class="text">Address*</td>
+                    <td><input class="detail" type="text" name="street1" placeholder="Street Address" required></td>
+                    <td><input class="detail" type="text" name="street2" placeholder="Street Line 2" required></td>
+                </tr>
+					<tr>
+                        <td></td>
+                        <td><input class="detail" type="text" name="landmark" placeholder="Landmark" required></td>
+                        <td><input class="detail" type="text" name="city" placeholder="City" required></td>
+                    </tr>
+				<tr>
+                    <td></td>
+                    <td><input class="detail" type="text" name="state" placeholder="State/Province" required></td>
+                    <td><input class="detail" type="Number" name="Zip" placeholder="Postal/ZIP Code" required><br></td>
+                </tr>
+				<tr>
+                    <td></td>
+                    <td colspan="2">
+                    <button class="submit" type="submit" value="submit">SUBMIT</button>
+                </td>
+            </tr>   	
+         	</table>
+
+		</form>
+	</div>
+	</div>
+
+
+</body>
+</html>
